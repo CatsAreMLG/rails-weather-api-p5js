@@ -1,4 +1,10 @@
-<p id="p"></p>
+<nav>
+    <ul>
+        <li id="li1"></li>
+        <li id="li2"></li>
+        <li id="li3"></li>
+    </ul>
+</nav>
 <%# <button id="button">Get Location</button>
 <p id="startLat"></p>
 <p id="startLon"></p> %>
@@ -69,7 +75,9 @@
             }
             // draw
             background(2.55 * temperature, (((temperature / 100) - 1) * -180), ((temperature / 100) - 1) * -255);
-            document.getElementById('p').innerHTML = 'Temperature: ' + temperature + ' - Wind Speed: ' + windSpeed + ' - Wind Direction: ' + ((windDirection) ? windDirection : 'No Current Wind Direction Weather Data.');
+            document.getElementById('li1').innerHTML = 'Temperature: ' + temperature;
+            document.getElementById('li2').innerHTML = 'Wind Speed: ' + windSpeed;
+            document.getElementById('li3').innerHTML = 'Wind Direction: ' + ((windDirection) ? windDirection : 'No Current Wind Direction Weather Data.');
             stroke(255);
             translate(width / 2, height / 2)
             rotate(windDirection + i);

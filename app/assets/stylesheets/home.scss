@@ -32,9 +32,18 @@ canvas {
     max-width: 800px !important;
     margin: 0 auto !important;
 }
-#button {
-    padding: 1em;
-    align-self: center;
-    background: rgb(255, 255, 255);
-    border: none;
+nav {
+    margin: 0 auto;
+    ul {
+        background: rgba(black, .35);
+        margin: .5rem;
+        padding: 1rem 1rem;
+        display: flex;
+        justify-content: center;
+        li {
+            list-style: none;
+            margin: 0 1em;
+            padding: 0;
+        }
+    }
 }
