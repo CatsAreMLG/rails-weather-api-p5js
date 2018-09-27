@@ -1,11 +1,18 @@
 <p id="p"></p>
+<button id="button">Get Location</button>
+<p id="startLat"></p>
+<p id="startLon"></p>
+<%= request.location.city %>
 <script>
+    document.getElementById('button').onclick = function() {
+        <%= location(request.location.latitude, request.location.longitude) %>
+    }
     let weather;
     let met;
     let i;
     let randomWind;
-    const windDirection = <%= @windDirection %>;
-    const windSpeed = <%= @windSpeed %>;
+    let windDirection = <%= @windDirection %>;
+    let windSpeed = <%= @windSpeed %>;
     let temperature = <%= @temperature %>;
 
     function setup() {
