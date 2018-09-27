@@ -7,5 +7,6 @@ class HomeController < ApplicationController
     @temperature = @json["main"]["temp"]
     @windSpeed = @json["wind"]["speed"]
     @windDirection = @json["wind"]["deg"]
+    @a = params[:data_value]
   end
 end

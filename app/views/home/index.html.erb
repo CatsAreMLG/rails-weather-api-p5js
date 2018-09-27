@@ -1,12 +1,26 @@
 <p id="p"></p>
-<button id="button">Get Location</button>
+<%# <button id="button">Get Location</button>
 <p id="startLat"></p>
-<p id="startLon"></p>
-<%= request.location.city %>
+<p id="startLon"></p> %>
 <script>
-    document.getElementById('button').onclick = function() {
-        <%= location(request.location.latitude, request.location.longitude) %>
-    }
+    // var array = [1, 2, 3, 4, 5];
+
+    // $.ajax({
+    //         url : "/home",
+    //         type : "post",
+    //         data : { data_value: JSON.stringify(array) }
+    //     });
+    // document.getElementById('button').onclick = function() {
+    //     var startPos;
+    //     var geoSuccess = function(position) {
+    //         startPos = position;
+    //         document.getElementById('startLat').innerHTML = startPos.coords.latitude;
+    //         document.getElementById('startLon').innerHTML = startPos.coords.longitude;
+    //         // var locObj = {lat: startPos.coords.latitude, lon: startPos.coords.longitude};
+    //         // document.getElementById("s_ip").value = '[' + startPos.coords.latitude + ',' + startPos.coords.longitude + ']';
+    //     };
+    //     navigator.geolocation.getCurrentPosition(geoSuccess);
+    // }
     let weather;
     let met;
     let i;
