@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <%= video_tag("Windy-Traffic.webm", autoplay: true, muted: true, loop: true, poster: 'Windy-Traffic.jpg', class: "video") %>
+    <%= video_tag(["Windy-Traffic.webm", "Windy-Traffic.mp4"], autoplay: true, muted: true, loop: true, poster: 'Windy-Traffic.jpg', class: "video") %>
     <%= yield %>
   </body>
 </html>
